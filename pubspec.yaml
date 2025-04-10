@@ -28,17 +28,36 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  cached_network_image: ^3.4.1
+  cupertino_icons: ^1.0.8
+  dio: ^5.7.0
+  firebase_auth: ^5.3.4
+  firebase_core: ^3.8.0
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.1.6
+  flutter_spinkit: ^5.2.1
+  freezed: ^2.5.7
+  freezed_annotation: ^2.4.4
+  image_picker: ^1.1.2
+  intl: ^0.20.1
+  json_annotation: ^4.9.0
+  my_api_client:
+    path: ../my_api_client
+    # git:
+    #   url: https://github.com/DDOLDDOL/my_api_client.git
+  provider: ^6.1.2
+  useful_widgets:
+    path: ../useful_widgets
+    # git:
+      # url: https://github.com/DDOLDDOL/useful_widgets
 
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.8
 
 dev_dependencies:
+  build_runner: ^2.4.13
   flutter_test:
     sdk: flutter
+
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -59,9 +78,15 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/images/
+    - assets/images/fake/
+    - assets/images/bottom-nav-bar-icons/
+    - assets/images/oauth-button-icons/
+  fonts:
+    - family: Suit
+      fonts:
+        - asset: assets/fonts/SUIT-Variable.ttf
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

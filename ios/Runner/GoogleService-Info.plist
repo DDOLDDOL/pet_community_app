@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyAoS4yV5zomaQpXu0uVcIyTBne3gJatglQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>178176364022</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ddolddol.petcommunityapp.petCommunityApp</string>
+	<key>PROJECT_ID</key>
+	<string>pet-community-1cebc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pet-community-1cebc.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:178176364022:ios:368404910ba4f84e66cbd7</string>
+</dict>
+</plist>

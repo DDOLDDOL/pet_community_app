@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "178176364022",
+    "project_id": "pet-community-1cebc",
+    "storage_bucket": "pet-community-1cebc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178176364022:android:006621ffedf9a9fa66cbd7",
+        "android_client_info": {
+          "package_name": "com.ddolddol.pet_community_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6kFjqtskGjPn2gVaRGTsV044gwiT7trY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
