@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:pet_community_app/common/common.dart';
 import 'package:pet_community_app/post/post.dart';
+import 'package:provider/provider.dart';
 import 'package:useful_widgets/useful_widgets.dart';
 
 class PostCard extends StatelessWidget {
@@ -15,7 +16,6 @@ class PostCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print('aaaaa ${postDetail.imageUrls}');
     return Column(
       children: [
         _Header(postDetail: postDetail),
@@ -40,10 +40,19 @@ class _Header extends StatelessWidget {
       padding: const EdgeInsets.all(20).copyWith(bottom: 0),
       child: Row(
         children: [
+          // ClipRRect(
+          //   borderRadius: BorderRadius.circular(12),
+          //   child: CachedNetworkImage(
+          //     imageUrl: postDetail.petProfileImageUrl,
+          //     width: 24,
+          //     height: 24,
+          //     fit: BoxFit.cover,
+          //   ),
+          // ),
           ClipRRect(
             borderRadius: BorderRadius.circular(12),
-            child: CachedNetworkImage(
-              imageUrl: postDetail.petProfileImageUrl,
+            child: Image.asset(
+              'assets/images/fake/fake-profile.png',
               width: 24,
               height: 24,
               fit: BoxFit.cover,
@@ -80,7 +89,10 @@ class _Body extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(20),
-            child: Image.network(postDetail.imageUrls[0]),
+            // child: CachedNetworkImage(imageUrl: postDetail.imageUrls[0]),
+            child: Image.asset(
+              'assets/images/fake/fake-pet-model.jpeg',
+            ),
           ),
         ),
         Padding(
@@ -104,9 +116,16 @@ class _Body extends StatelessWidget {
                         showDragHandle: false,
                         expanded: true,
                         maxHeightRate: 0.7,
-                        borderRadius: const BorderRadius.vertical(top: Radius.circular(12)),
+                        borderRadius: const BorderRadius.vertical(
+                            top: Radius.circular(12)),
+                        isScrollControlled: true,
                         builder: (context) {
-                          return CommentListBottomSheet(postId: postDetail.id);
+                          return Provider.value(
+                            value: Scaffold.maybeOf(context),
+                            child: CommentListBottomSheet(
+                              postId: postDetail.id,
+                            ),
+                          );
                         },
                       );
                     },
@@ -116,10 +135,7 @@ class _Body extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 12),
-              Text(
-                postDetail.content,
-                style: TextStyles.textBig,
-              ),
+              Text(postDetail.content, style: TextStyles.textBig),
             ],
           ),
         ),

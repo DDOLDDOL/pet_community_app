@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pet_community_app/auth/auth.dart';
 import 'package:pet_community_app/common/common.dart';
+import 'package:pet_community_app/home/home.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -29,7 +31,9 @@ class LoginScreen extends StatelessWidget {
                         padding: const EdgeInsets.only(bottom: 8),
                         child: OAuthButton(
                           platform: platform,
-                          onTap: (_) {},
+                          onTap: (_) {
+                            context.read<UserBloc>().add(UserEvent.userFetchRequested());
+                          },
                           loadingWhen: false,
                         ),
                       ),

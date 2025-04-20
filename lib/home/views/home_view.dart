@@ -6,6 +6,9 @@ import 'package:pet_community_app/pet/cubits/cubits.dart';
 import 'package:pet_community_app/post/cubits/post_list_fetch_cubit.dart';
 import 'package:pet_community_app/post/post.dart';
 
+import '../../common/styles/palette.dart';
+import '../../common/styles/text_styles.dart';
+
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
@@ -14,8 +17,10 @@ class HomeView extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(
-          create: (context) =>
-              PostListFetchCubit.create(context)..fetchPostListByPetId(0),
+          create: (context) {
+            return PostListFetchCubit.create(context)
+              ..fetchPostListByPetId(0);
+          },
         ),
       ],
       child: const _Content(),
@@ -30,7 +35,41 @@ class _Content extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        HomeHeader(),
+        DefaultTabController(
+          length: 3,
+          child: TabBar(
+            dividerHeight: 1,
+            dividerColor: Palette.gray300,
+            isScrollable: true,
+            tabAlignment: TabAlignment.start,
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            labelPadding: const EdgeInsets.symmetric(horizontal: 8),
+            labelStyle: TextStyles.textMedium.copyWith(
+              fontWeight: FontWeight.w700,
+              color: const Color(0xFF050505),
+            ),
+            unselectedLabelStyle: TextStyles.textMedium.copyWith(
+              color: const Color(0xFF8E95A3),
+            ),
+            indicatorWeight: 2,
+            indicatorColor: const Color(0xFF050505),
+            indicatorSize: TabBarIndicatorSize.tab,
+            tabs: [
+              Tab(
+                height: 32,
+                text: '강아지',
+              ),
+              Tab(
+                height: 32,
+                text: '고양이',
+              ),
+              Tab(
+                height: 32,
+                text: '쇼핑몰',
+              ),
+            ],
+          ),
+        ),
         Expanded(
           child: FetchRequestBlocBuilder<PostListFetchCubit, List<PostDetail>>(
             onLoading: (_) {

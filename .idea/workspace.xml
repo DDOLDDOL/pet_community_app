@@ -1,34 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c41cffd-d7c8-491b-8858-2cb067600df5" name="Default Changelist" comment="" />
+    <list default="true" id="1c41cffd-d7c8-491b-8858-2cb067600df5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/fonts/SUIT-Bold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/SUIT-ExtraBold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/SUIT-ExtraLight.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/SUIT-Heavy.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/SUIT-Light.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/SUIT-Medium.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/SUIT-Regular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/SUIT-SemiBold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/SUIT-Thin.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/add-filled-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/bottom-nav-bar-icons/chat-outlined.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/bottom-nav-bar-icons/scrap-filled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/bottom-nav-bar-icons/scrap-outlined.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/checker-filled-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/delete-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/edit-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/notice-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/scrap-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/settings-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/auth/models/models.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/auth/models/user.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/auth/views/profile_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/auth/views/views.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/auth/widgets/auth_guard.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/common/cubits/base_cubit.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/common/utils/alert.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/common/utils/utils.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/common/widgets/bottom_sheets/bottom_sheets.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/common/widgets/dialogs/alert_dialog.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/common/widgets/dialogs/dialogs.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/common/widgets/forms/dialog_form.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/common/widgets/forms/forms.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/common/widgets/theme_icon_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/friend/cubits/cubits.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/friend/cubits/followers_fetch_cubit.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/friend/cubits/followers_fetch_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/friend/cubits/followings_fetch_cubit.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/friend/cubits/followings_fetch_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/friend/friend.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/friend/models/friend.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/friend/models/models.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/friend/repository/friend_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/friend/repository/repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/friend/screens/friend_managing_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/friend/screens/screens.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/friend/views/followers_list_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/friend/views/followings_list_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/friend/views/views.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/friend/widgets/follow_state_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/friend/widgets/friend_list_tile.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/friend/widgets/recommended_list_tile.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/friend/widgets/widgets.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/pet/widgets/pet_selector_bottom_sheet.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/post/widgets/comment_menu_bottom_sheet.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/pet_community_app_android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/android/pet_community_app_android.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/SUIT-Variable.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/notice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/auth/auth.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/auth/auth.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/auth/screens/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/auth/screens/login_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/auth/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/auth/widgets/widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/common/common.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/common/common.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/common/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/common/widgets/widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home/screens/home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home/screens/home_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home/views/home_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home/views/home_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home/widgets/home_bottom_navigation_bar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home/widgets/home_bottom_navigation_bar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home/widgets/home_header.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home/widgets/home_header.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pet/cubits/my_pet_list_fetch_cubit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pet/cubits/my_pet_list_fetch_cubit.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pet/cubits/my_pet_list_fetch_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pet/cubits/my_pet_list_fetch_state.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pet/cubits/pet_registration_cubit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pet/cubits/pet_registration_cubit.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pet/models/pet_detail.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pet/models/pet_detail.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pet/repository/pet_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pet/repository/pet_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pet/widgets/pet_selector.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pet/widgets/pet_selector.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pet/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pet/widgets/widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/post/cubits/comment_fetch_cubit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/post/cubits/comment_fetch_cubit.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/post/screens/post_upload_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/post/screens/post_upload_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/post/widgets/comment_list_bottom_sheet.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/post/widgets/comment_list_bottom_sheet.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/post/widgets/comment_list_tile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/post/widgets/comment_list_tile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/post/widgets/post_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/post/widgets/post_card.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/post/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/post/widgets/widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet_community_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pet_community_app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/macgnc/.android/avd/Pixel_2_API_30.avd]" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;11c-aiden&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/DDOLDDOL/pet_community_app&quot;,
+    &quot;accountId&quot;: &quot;7ce3280f-0119-4a1e-b916-b3f5e0931fb7&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2q6sFOAYCCtRAgIr2lG8AZgv5a0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="project.structure.last.edited" value="SDK Location" />
-    <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
-    <property name="show.migrate.to.gradle.popup" value="false" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/mac_aiden/Documents/github/pet_community_app/lib/friend/views",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/friend/views" />
+      <recent name="$PROJECT_DIR$/lib/friend/cubits" />
+      <recent name="$PROJECT_DIR$/lib/friend/repository" />
+      <recent name="$PROJECT_DIR$/lib/friend/models" />
+      <recent name="$PROJECT_DIR$/lib/auth/models" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/auth" />
+      <recent name="$PROJECT_DIR$/assets/images" />
+      <recent name="$PROJECT_DIR$/lib/common" />
+      <recent name="$PROJECT_DIR$/lib/pet/widgets" />
+      <recent name="$PROJECT_DIR$/assets" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">

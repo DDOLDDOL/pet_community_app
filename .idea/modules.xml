@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/pet_community_app.iml" filepath="$PROJECT_DIR$/pet_community_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/pet_community_app_android.iml" filepath="$PROJECT_DIR$/android/pet_community_app_android.iml" />
     </modules>
   </component>
 </project>

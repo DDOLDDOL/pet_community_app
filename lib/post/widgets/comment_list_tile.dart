@@ -1,6 +1,8 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:pet_community_app/common/common.dart';
 import 'package:pet_community_app/post/post.dart';
+import 'package:useful_widgets/useful_widgets.dart';
 
 class CommentListTile extends StatelessWidget {
   const CommentListTile({
@@ -69,8 +71,10 @@ class _Header extends StatelessWidget {
       children: [
         ClipRRect(
           borderRadius: BorderRadius.circular(12),
-          child: Image.network(
-            userProfileImageUrl,
+          // child: CachedNetworkImage(
+          //   imageUrl: userProfileImageUrl,
+          child: Image.asset(
+            'assets/images/fake/fake-profile.png',
             width: 20,
             height: 20,
           ),
@@ -86,7 +90,12 @@ class _Header extends StatelessWidget {
         ),
         const SizedBox(width: 4),
         InkWell(
-          onTap: () {},
+          onTap: () {
+            showConstrainedBottomSheet(
+              context: context,
+              builder: (_) => CommentMenuBottomSheet(commentId: 0),
+            );
+          },
           child: Icon(Icons.more_horiz_outlined),
         )
       ],

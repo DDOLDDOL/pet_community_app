@@ -21,6 +21,10 @@ class HomeBottomNavigationBar extends StatelessWidget {
           label: '',
         ),
         BottomNavigationBarItem(
+          icon: Image.asset(_iconUri(1, 'chat'), height: 24),
+          label: '',
+        ),
+        BottomNavigationBarItem(
           icon: Image.asset(
             'assets/images/bottom-nav-bar-icons/photo-upload.png',
             height: 32,
@@ -28,7 +32,11 @@ class HomeBottomNavigationBar extends StatelessWidget {
           label: '',
         ),
         BottomNavigationBarItem(
-          icon: Image.asset(_iconUri(2, 'user'), height: 24),
+          icon: Image.asset(_iconUri(3, 'scrap'), height: 24),
+          label: '',
+        ),
+        BottomNavigationBarItem(
+          icon: Image.asset(_iconUri(4, 'user'), height: 24),
           label: '',
         ),
       ],

@@ -53,6 +53,7 @@ class _Content extends StatelessWidget {
               },
             ),
           ),
+          Padding(padding: EdgeInsets.all(20), child: _InputField()),
         ],
       ),
     );
@@ -69,7 +70,7 @@ class _Header extends StatelessWidget {
       height: 48,
       child: Row(
         children: [
-          Expanded(
+          const Expanded(
             child: Align(
               alignment: Alignment.centerLeft,
               child: Icon(Icons.keyboard_arrow_left_outlined),
@@ -77,7 +78,6 @@ class _Header extends StatelessWidget {
           ),
           Text('댓글', style: TextStyles.accent),
           const Spacer(),
-          SizedBox(width: 100, height: 40, child: _InputField()),
         ],
       ),
     );

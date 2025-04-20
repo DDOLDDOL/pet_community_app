@@ -1,0 +1,2 @@
+/Users/mac_aiden/Documents/github/pet_community_app/android/app/.cxx/Debug/6c1u5854/x86_64/CMakeFiles/edit_cache.dir
+/Users/mac_aiden/Documents/github/pet_community_app/android/app/.cxx/Debug/6c1u5854/x86_64/CMakeFiles/rebuild_cache.dir

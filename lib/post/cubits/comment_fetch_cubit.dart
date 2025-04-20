@@ -21,7 +21,7 @@ class CommentFetchCubit extends Cubit<CommentFetchState> {
       emit(
         CommentFetchState.error(
           '댓글을 불러올 수 없습니다',
-          error.toString().split('Exception: ').first,
+          error.toString().split('Exception: ').last,
         ),
       );
     }

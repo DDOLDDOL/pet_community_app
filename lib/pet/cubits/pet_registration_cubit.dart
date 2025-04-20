@@ -33,7 +33,7 @@ class PetRegistrationCubit extends Cubit<PetRegistrationState> {
       emit(
         PetRegistrationState.error(
           '반려동물 등록에 실패했습니다',
-          error.toString().split('Exception: ').first,
+          error.toString().split('Exception: ').last,
         ),
       );
     }
