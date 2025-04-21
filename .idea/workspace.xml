@@ -10,92 +10,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c41cffd-d7c8-491b-8858-2cb067600df5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/fonts/SUIT-Bold.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/SUIT-ExtraBold.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/SUIT-ExtraLight.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/SUIT-Heavy.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/SUIT-Light.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/SUIT-Medium.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/SUIT-Regular.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/SUIT-SemiBold.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/SUIT-Thin.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/add-filled-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/bottom-nav-bar-icons/chat-outlined.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/bottom-nav-bar-icons/scrap-filled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/bottom-nav-bar-icons/scrap-outlined.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/checker-filled-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/delete-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/edit-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/notice-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/scrap-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/settings-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/auth/models/models.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/auth/models/user.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/auth/views/profile_view.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/auth/views/views.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/auth/widgets/auth_guard.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/common/cubits/base_cubit.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/common/utils/alert.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/common/utils/utils.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/common/widgets/bottom_sheets/bottom_sheets.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/common/widgets/dialogs/alert_dialog.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/common/widgets/dialogs/dialogs.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/common/widgets/forms/dialog_form.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/common/widgets/forms/forms.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/common/widgets/theme_icon_button.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/friend/cubits/cubits.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/friend/cubits/followers_fetch_cubit.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/friend/cubits/followers_fetch_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/friend/cubits/followings_fetch_cubit.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/friend/cubits/followings_fetch_state.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/friend/friend.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/friend/models/friend.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/friend/models/models.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/friend/repository/friend_repository.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/friend/repository/repository.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/friend/screens/friend_managing_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/friend/screens/screens.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/friend/views/followers_list_view.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/friend/views/followings_list_view.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/friend/views/views.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/friend/widgets/follow_state_button.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/friend/widgets/friend_list_tile.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/friend/widgets/recommended_list_tile.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/friend/widgets/widgets.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/pet/widgets/pet_selector_bottom_sheet.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/post/widgets/comment_menu_bottom_sheet.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/common/widgets/theme_image_uploader.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/post/cubits/post_upload_input_cubit.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/post/cubits/post_upload_input_state.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/pet_community_app_android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/android/pet_community_app_android.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/SUIT-Variable.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/notice.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/auth/auth.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/auth/auth.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/auth/screens/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/auth/screens/login_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/auth/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/auth/widgets/widgets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/common/common.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/common/common.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/arm64-v8a/.cmake/api/v1/reply/index-2025-04-12T05-47-50-0683.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/arm64-v8a/CMakeFiles/3.22.1-g37088a8/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/arm64-v8a/CMakeFiles/3.22.1-g37088a8/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/arm64-v8a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/arm64-v8a/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/arm64-v8a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/arm64-v8a/configure_fingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/armeabi-v7a/.cmake/api/v1/reply/index-2025-04-12T05-47-58-0245.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/armeabi-v7a/CMakeFiles/3.22.1-g37088a8/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/armeabi-v7a/CMakeFiles/3.22.1-g37088a8/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/armeabi-v7a/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/armeabi-v7a/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/armeabi-v7a/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/armeabi-v7a/configure_fingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/x86/.cmake/api/v1/reply/index-2025-04-12T05-47-58-0520.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/x86/CMakeFiles/3.22.1-g37088a8/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/x86/CMakeFiles/3.22.1-g37088a8/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/x86/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/x86/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/x86/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/x86/configure_fingerprint.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/x86_64/.cmake/api/v1/reply/index-2025-04-12T05-47-58-0765.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/x86_64/CMakeFiles/3.22.1-g37088a8/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/x86_64/CMakeFiles/3.22.1-g37088a8/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/x86_64/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/x86_64/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/x86_64/configure_fingerprint.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/6c1u5854/x86_64/configure_fingerprint.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/common/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/common/widgets/widgets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home/screens/home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home/screens/home_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home/views/home_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home/views/home_view.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home/widgets/home_bottom_navigation_bar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home/widgets/home_bottom_navigation_bar.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home/widgets/home_header.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home/widgets/home_header.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pet/cubits/my_pet_list_fetch_cubit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pet/cubits/my_pet_list_fetch_cubit.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pet/cubits/my_pet_list_fetch_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pet/cubits/my_pet_list_fetch_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pet/cubits/pet_registration_cubit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pet/cubits/pet_registration_cubit.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pet/models/pet_detail.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pet/models/pet_detail.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pet/repository/pet_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pet/repository/pet_repository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pet/widgets/pet_selector.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pet/widgets/pet_selector.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pet/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pet/widgets/widgets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/post/cubits/comment_fetch_cubit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/post/cubits/comment_fetch_cubit.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/post/cubits/cubits.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/post/cubits/cubits.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/post/screens/post_upload_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/post/screens/post_upload_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/post/widgets/comment_list_bottom_sheet.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/post/widgets/comment_list_bottom_sheet.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/post/widgets/comment_list_tile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/post/widgets/comment_list_tile.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/post/widgets/post_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/post/widgets/post_card.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/post/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/post/widgets/widgets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet_community_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pet_community_app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,18 +76,18 @@
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/mac_aiden/Documents/github/pet_community_app/lib/friend/views",
+    "last_opened_file_path": "/Users/mac_aiden/Documents/github/pet_community_app/lib/post/cubits",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/post/cubits" />
       <recent name="$PROJECT_DIR$/lib/friend/views" />
       <recent name="$PROJECT_DIR$/lib/friend/cubits" />
       <recent name="$PROJECT_DIR$/lib/friend/repository" />
       <recent name="$PROJECT_DIR$/lib/friend/models" />
-      <recent name="$PROJECT_DIR$/lib/auth/models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/auth" />
