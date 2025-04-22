@@ -3,8 +3,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pet_community_app/auth/auth.dart';
 import 'package:pet_community_app/common/common.dart';
 import 'package:pet_community_app/home/home.dart';
+import 'package:pet_community_app/notice/notice.dart';
 import 'package:pet_community_app/pet/widgets/pet_selector.dart';
 import 'package:pet_community_app/post/screens/post_upload_screen.dart';
+import 'package:pet_community_app/post/views/scrap_view.dart';
+import 'package:pet_community_app/setting/screens/screens.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -37,15 +40,20 @@ class _View extends StatelessWidget {
                 centerTitle: false,
                 actions: [
                   ThemeIconButton(
-                    onPressed: () {},
-                    icon: Image.asset('assets/images/scrap-icon.png'),
-                  ),
-                  ThemeIconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => const NoticeListScreen(),
+                        ),
+                      );
+                    },
                     icon: Image.asset('assets/images/notice-icon.png'),
                   ),
                   const SizedBox(width: 12),
                 ],
+              ),
+            3 => AppBar(
+                title: const Text('앨범북'),
               ),
             4 => AppBar(
                 title: const Text('마이페이지'),
@@ -55,11 +63,13 @@ class _View extends StatelessWidget {
                     icon: Image.asset('assets/images/notice-icon.png'),
                   ),
                   ThemeIconButton(
-                    onPressed: () {},
-                    icon: Image.asset('assets/images/scrap-icon.png'),
-                  ),
-                  ThemeIconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => SettingScreen(),
+                        ),
+                      );
+                    },
                     icon: Image.asset('assets/images/settings-icon.png'),
                   ),
                   const SizedBox(width: 12),
@@ -85,6 +95,7 @@ class _View extends StatelessWidget {
           body: SafeArea(
             child: switch (viewIndex) {
               0 => const HomeView(),
+              3 => const ScrapView(),
               4 => const ProfileView(),
               _ => Container(),
             },

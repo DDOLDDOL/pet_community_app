@@ -118,7 +118,7 @@ class _ProfileSection extends StatelessWidget {
             onPressed: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (_) => FriendManagingScreen(),
+                  builder: (_) => PetRegistrationScreen(),
                 ),
               );
             },
