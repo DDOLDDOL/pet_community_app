@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:pet_community_app/common/common.dart';
 import 'package:useful_widgets/useful_widgets.dart';
 
-class EmptyFollowerSection extends StatelessWidget {
-  const EmptyFollowerSection({super.key});
+class EmptyFollowerView extends StatelessWidget {
+  const EmptyFollowerView({super.key});
 
   @override
   Widget build(BuildContext context) {

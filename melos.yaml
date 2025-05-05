@@ -1,0 +1,21 @@
+name: pet_community_app
+packages:
+  - .
+
+scripts:
+  bootstrap: |
+    melos pub_get
+    melos gen_protobuf
+    melos build_runner:refresh
+
+  pub_get:
+    flutter pub get
+
+  build_runner:
+    dart run build_runner build
+
+  build_runner:refresh:
+    dart run build_runner build --delete-conflicting-outputs
+
+  gen_protobuf:
+    ./gen_protobuf.sh

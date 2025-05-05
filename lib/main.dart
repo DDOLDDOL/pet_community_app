@@ -22,15 +22,15 @@ Future<void> main() async {
       ],
       child: const _MultiRepositoryProvider(
         child: _MultiBlocProviderAboveApp(
-          child: _App(),
+          child: App(),
         ),
       ),
     ),
   );
 }
 
-class _App extends StatelessWidget {
-  const _App();
+class App extends StatelessWidget {
+  const App();
 
   @override
   Widget build(BuildContext context) {

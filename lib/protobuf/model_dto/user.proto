@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package model_dto;
+
+// Dart에서 Timestamp를 사용할 수 있도록 google.protobuf.Timestamp 임포트
+import "google/protobuf/timestamp.proto";
+
+message User {
+  // 유저 고유 ID (BigInt는 string으로 전달하는 것이 일반적)
+  string user_id = 1;
+
+  // 이메일 주소
+  string email = 2;
+
+  // SNS 제공처 (예: google, kakao, apple 등)
+  string sns_provider = 3;
+
+  // SNS 연동 고유 ID
+  string sns_id = 4;
+
+  // 생성일
+  google.protobuf.Timestamp created_at = 5;
+
+  // 수정일
+  google.protobuf.Timestamp updated_at = 6;
+}

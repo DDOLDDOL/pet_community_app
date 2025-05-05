@@ -15,13 +15,14 @@ class HomeBottomNavigationBar extends StatelessWidget {
     return BottomNavigationBar(
       onTap: onTap,
       currentIndex: currentIndex,
+      type: BottomNavigationBarType.fixed,
       items: [
         BottomNavigationBarItem(
           icon: Image.asset(_iconUri(0, 'home'), height: 24),
           label: '',
         ),
         BottomNavigationBarItem(
-          icon: Image.asset(_iconUri(1, 'chat'), height: 24),
+          icon: Image.asset(_iconUri(1, 'search'), height: 24),
           label: '',
         ),
         BottomNavigationBarItem(

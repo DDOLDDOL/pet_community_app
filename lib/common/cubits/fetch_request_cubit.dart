@@ -16,6 +16,8 @@ class FetchRequestCubit<T> extends Cubit<FetchRequestState<T>> {
 
     try {
       final result = await request();
+
+      if(isClosed) return;
       emit(FetchRequestState.loaded(result));
     } on Exception catch (error) {
       emit(

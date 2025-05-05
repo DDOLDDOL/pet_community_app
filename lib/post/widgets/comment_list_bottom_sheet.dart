@@ -17,7 +17,8 @@ class CommentListBottomSheet extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => CommentFetchCubit(context.read<PostRepository>())
-        ..fetchComments(postId),
+        // ..fetchComments(postId),
+        ..fetchComments(),
       child: const _Content(),
     );
   }
@@ -53,7 +54,10 @@ class _Content extends StatelessWidget {
               },
             ),
           ),
-          Padding(padding: EdgeInsets.all(20), child: _InputField()),
+          Padding(
+            padding: EdgeInsets.all(20),
+            child: _InputField(),
+          ),
         ],
       ),
     );
@@ -84,26 +88,73 @@ class _Header extends StatelessWidget {
   }
 }
 
-class _InputField extends StatelessWidget {
+class _InputField extends StatefulWidget {
   const _InputField({super.key});
 
   @override
+  State<_InputField> createState() => _InputFieldState();
+}
+
+class _InputFieldState extends State<_InputField> {
+  late final TextEditingController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = TextEditingController();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return TextInputField(
-      enabledBorderSide: const BorderSide(color: Colors.transparent),
-      focusedBorderSide: BorderSide(color: Colors.grey.shade600, width: 2),
-      backgroundColor: Colors.grey.shade100,
-      borderRadiusValue: 12,
-      contentPadding: const EdgeInsets.all(16),
-      textStyle: TextStyles.textBig.copyWith(
-        fontFamily: 'SUIT',
-        color: Colors.black,
-      ),
-      hintText: '댓글을 입력해주세요',
-      hintStyle: TextStyles.textBig.copyWith(
-        fontFamily: 'SUIT',
-        color: Colors.grey.shade400,
-      ),
-    );
+        return TextInputField(
+          controller: _controller,
+          enabledBorderSide: const BorderSide(color: Colors.transparent),
+          focusedBorderSide: BorderSide(color: Colors.grey.shade600, width: 2),
+          backgroundColor: Colors.grey.shade100,
+          borderRadiusValue: 12,
+          contentPadding: const EdgeInsets.all(16),
+          textStyle: TextStyles.textBig.copyWith(
+            fontFamily: 'SUIT',
+            color: Colors.black,
+          ),
+          hintText: '댓글을 입력해주세요',
+          hintStyle: TextStyles.textBig.copyWith(
+            fontFamily: 'SUIT',
+            color: Colors.grey.shade400,
+          ),
+          suffixIcon: InkWell(
+            onTap: () {
+              context.read<CommentFetchCubit>().fetchComments(
+                    newComment: CommentDetail(
+                      1,
+                      '모리',
+                      DateTime.now(),
+                      _controller.text,
+                    ),
+                  );
+
+              _controller.clear();
+            },
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Center(
+                child: Text(
+                  '등록',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w700,
+                    fontSize: 14,
+                    color: Palette.themeColor,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        );
   }
 }
